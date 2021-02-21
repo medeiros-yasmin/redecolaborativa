@@ -36,7 +36,7 @@ class DrawerSecao extends StatelessWidget {
                   fontSize: 16.0,
                   color: controller.page.round() == page
                       ? Theme.of(context).primaryColor
-                      : Colors.grey[500],
+                      : Colors.white,
                 ),
               )
             ],

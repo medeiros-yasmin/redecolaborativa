@@ -67,7 +67,7 @@ class DrawerCustomizado extends StatelessWidget {
               DrawerSecao(Icons.home, ("Inicio"), pageController, 0),
               DrawerSecao(Icons.list, ("Categorias"), pageController, 1),
               DrawerSecao(Icons.playlist_add_check_sharp,
-                  ("Minhas publicações"), pageController, 2),
+                  ("Criar nova publicação"), pageController, 2),
               DrawerSecao(Icons.save, ("Salvos"), pageController, 3),
             ],
           )

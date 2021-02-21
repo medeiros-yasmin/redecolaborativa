@@ -1,6 +1,8 @@
+import 'package:aplicacao_colaborativa/secao/edicao_publicacoes.dart';
 import 'package:flutter/material.dart';
 import 'package:aplicacao_colaborativa/tabs/home_tab.dart';
 import 'package:aplicacao_colaborativa/widgets/drawer_customizado.dart';
+import 'package:aplicacao_colaborativa/tabs/tab_categorias.dart';
 
 class HomeScreen extends StatelessWidget {
   final _pageController = PageController();
@@ -13,8 +15,21 @@ class HomeScreen extends StatelessWidget {
           body: HomeTab(),
           drawer: DrawerCustomizado(_pageController),
         ),
-        Container(
-          color: Colors.purple,
+        Scaffold(
+          appBar: AppBar(
+            title: Text("Categorias"),
+            centerTitle: true,
+          ),
+          drawer: DrawerCustomizado(_pageController),
+          body: TabCategorias(),
+        ),
+        Scaffold(
+          appBar: AppBar(
+            title: Text("Editar/Criar Publicações"),
+            centerTitle: true,
+          ),
+          drawer: DrawerCustomizado(_pageController),
+          body: EdicaoPublicacao(),
         ),
         Container(
           color: Colors.pink,
